@@ -1,0 +1,184 @@
+{
+  "component": {
+    "prefix": "rc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "  render() {",
+      "    return <div />;",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Create react component"
+  },
+
+  "componentStateless": {
+    "prefix": "rsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <div />;",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}};",
+      ""
+    ],
+    "description": "Create react stateless component"
+  },
+
+  "styles": {
+    "prefix": "styled",
+    "body": [
+      "import styled from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create react styled-components file"
+  },
+
+  "proptypes": {
+    "prefix": "proptypes",
+    "body": ["static propTypes = {", "  ${1}", "};"],
+    "description": "Create component propTypes"
+  },
+
+  "defaultprops": {
+    "prefix": "defaultprops",
+    "body": ["static defaultProps = {", "  ${1}", "};"],
+    "description": "Create component defaultProps"
+  },
+
+  "reduxComponent": {
+    "prefix": "rrc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "import { bindActionCreators } from 'redux';",
+      "import { connect } from 'react-redux';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "  render() {",
+      "    return <div />;",
+      "  }",
+      "}",
+      "",
+      "// const mapStateToProps = state => ({});",
+      "",
+      "// const mapDispatchToProps = dispatch =>",
+      "//   bindActionCreators(Actions, dispatch);",
+      "",
+      "export default connect(",
+      "  // mapStateToProps,",
+      "  // mapDispatchToProps",
+      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ""
+    ],
+    "description": "Create react Redux component"
+  },
+
+  "reduxComponentStateless": {
+    "prefix": "rrsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { bindActionCreators } from 'redux';",
+      "import { connect } from 'react-redux';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <div />;",
+      "",
+      "// const mapStateToProps = state => ({});",
+      "",
+      "// const mapDispatchToProps = dispatch =>",
+      "//   bindActionCreators(Actions, dispatch);",
+      "",
+      "export default connect(",
+      "  // mapStateToProps,",
+      "  // mapDispatchToProps",
+      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ""
+    ],
+    "description": "Create react stateless Redux component"
+  },
+
+  "mapStateToProps": {
+    "prefix": "mapStateToProps",
+    "body": ["const mapStateToProps = state => ({", "  ${1}", "});"],
+    "description": "Create redux mapStateToProps"
+  },
+
+  "mapDispatchToProps": {
+    "prefix": "mapDispatchToProps",
+    "body": [
+      "const mapDispatchToProps = dispatch =>",
+      "  bindActionCreators(${1}, dispatch);"
+    ],
+    "description": "Create redux mapDispatchToProps"
+  },
+
+  "duck": {
+    "prefix": "duck",
+    "body": [
+      "import { createReducer, createActions } from 'reduxsauce';",
+      "import Immutable from 'seamless-immutable';",
+      "",
+      "/* Types & Action Creators */",
+      "",
+      "const { Types, Creators } = createActions({",
+      "// actionType: ['dataPassed'],",
+      "});",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}}Types = Types;",
+      "export default Creators;",
+      "",
+      "/* Initial State */",
+      "",
+      "export const INITIAL_STATE = Immutable({",
+      "// data: [],",
+      "});",
+      "",
+      "/* Reducers */",
+      "",
+      "// export const reducer = state =>",
+      "//   state.merge({ data: [] });",
+      "",
+      "/* Reducers to types */",
+      "",
+      "export const reducer = createReducer(INITIAL_STATE, {",
+      "// [Types.ACTION_TYPE]: reducer,",
+      "});",
+      ""
+    ],
+    "description": "Create react-native duck module"
+  },
+
+  "reactotronconfig": {
+    "prefix": "reactotron-react",
+    "body": [
+      "import Reactotron from 'reactotron-react-js';",
+      "",
+      "if (__DEV__) {",
+      "  const tron = Reactotron",
+      "    .configure()",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.tron = tron;",
+      "}",
+      ""
+    ],
+    "description": "Create React Reactotron Config"
+  }
+}
