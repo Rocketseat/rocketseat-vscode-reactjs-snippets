@@ -6,7 +6,7 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "export default class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "export default class ${TM_FILENAME_BASE} extends Component {",
       "  render() {",
       "    return <div />;",
       "  }",
@@ -23,9 +23,9 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <div />;",
+      "const ${TM_FILENAME_BASE} = () => <div />;",
       "",
-      "export default ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}};",
+      "export default ${TM_FILENAME_BASE};",
       ""
     ],
     "description": "Create react stateless component"
@@ -66,7 +66,7 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "class ${TM_FILENAME_BASE} extends Component {",
       "  render() {",
       "    return <div />;",
       "  }",
@@ -80,7 +80,7 @@
       "export default connect(",
       "  // mapStateToProps,",
       "  // mapDispatchToProps",
-      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ")(${TM_FILENAME_BASE});",
       ""
     ],
     "description": "Create react Redux component"
@@ -96,7 +96,7 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <div />;",
+      "const ${TM_FILENAME_BASE} = () => <div />;",
       "",
       "// const mapStateToProps = state => ({});",
       "",
@@ -106,7 +106,7 @@
       "export default connect(",
       "  // mapStateToProps,",
       "  // mapDispatchToProps",
-      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ")(${TM_FILENAME_BASE});",
       ""
     ],
     "description": "Create react stateless Redux component"
