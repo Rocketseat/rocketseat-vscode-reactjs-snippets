@@ -13,47 +13,7 @@
       "}",
       ""
     ],
-    "description": "Create react component"
-  },
-
-  "componentStateless": {
-    "prefix": "rsc",
-    "body": [
-      "import React from 'react';",
-      "",
-      "// import { Container } from './styles';",
-      "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <div />;",
-      "",
-      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
-      ""
-    ],
-    "description": "Create react stateless component"
-  },
-
-  "styles": {
-    "prefix": "styled",
-    "body": [
-      "import styled from 'styled-components';",
-      "",
-      "export const ${1:Container} = styled.${2:div}`",
-      "  ${3}",
-      "`;",
-      ""
-    ],
-    "description": "Create react styled-components file"
-  },
-
-  "proptypes": {
-    "prefix": "proptypes",
-    "body": ["static propTypes = {", "  ${1}", "};"],
-    "description": "Create component propTypes"
-  },
-
-  "defaultprops": {
-    "prefix": "defaultprops",
-    "body": ["static defaultProps = {", "  ${1}", "};"],
-    "description": "Create component defaultProps"
+    "description": "Create ReactJS Stateful Component"
   },
 
   "reduxComponent": {
@@ -72,18 +32,33 @@
       "  }",
       "}",
       "",
-      "// const mapStateToProps = state => ({});",
+      "const mapStateToProps = state => ({});",
       "",
       "// const mapDispatchToProps = dispatch =>",
       "//   bindActionCreators(Actions, dispatch);",
       "",
       "export default connect(",
-      "  // mapStateToProps,",
+      "  mapStateToProps,",
       "  // mapDispatchToProps",
       ")(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
       ""
     ],
-    "description": "Create react Redux component"
+    "description": "Create ReactJS Stateful Redux Component"
+  },
+
+  "componentStateless": {
+    "prefix": "rsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <div />;",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
+      ""
+    ],
+    "description": "Create ReactJS Stateless Component"
   },
 
   "reduxComponentStateless": {
@@ -98,37 +73,150 @@
       "",
       "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <div />;",
       "",
-      "// const mapStateToProps = state => ({});",
+      "const mapStateToProps = state => ({});",
       "",
       "// const mapDispatchToProps = dispatch =>",
       "//   bindActionCreators(Actions, dispatch);",
       "",
       "export default connect(",
-      "  // mapStateToProps,",
+      "  mapStateToProps,",
       "  // mapDispatchToProps",
       ")(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
       ""
     ],
-    "description": "Create react stateless Redux component"
+    "description": "Create ReactJS Stateless Redux Component"
+  },
+
+  "styles": {
+    "prefix": "styled-react",
+    "body": [
+      "import styled from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create ReactJS Styled Components file"
+  },
+
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import { axios } from 'axios';",
+      "",
+      "const api = axios.create({",
+      "  baseUrl: ${1},",
+      "});",
+      "",
+      "export default api;",
+      ""
+    ],
+    "description": "Create Axios Configuration file"
   },
 
   "mapStateToProps": {
-    "prefix": "mapStateToProps",
+    "prefix": "mapstatetoprops",
     "body": ["const mapStateToProps = state => ({", "  ${1}", "});"],
-    "description": "Create redux mapStateToProps"
+    "description": "Create Redux method mapStateToProps"
   },
 
   "mapDispatchToProps": {
-    "prefix": "mapDispatchToProps",
+    "prefix": "mapdispatchtoprops",
     "body": [
       "const mapDispatchToProps = dispatch =>",
       "  bindActionCreators(${1}, dispatch);"
     ],
-    "description": "Create redux mapDispatchToProps"
+    "description": "Create Redux method mapDispatchToProps"
+  },
+
+  "createStore": {
+    "prefix": "create-store-react",
+    "body": [
+      "import { createStore, compose, applyMiddleware } from 'redux';",
+      "import createSagaMiddleware from 'redux-saga';",
+      "",
+      "import reducers from './ducks';",
+      "import sagas from './sagas';",
+      "",
+      "const middlewares = [];",
+      "",
+      "const sagaMonitor = process.env.NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;",
+      "",
+      "const sagaMiddleware = createSagaMiddleware({ sagaMonitor });",
+      "",
+      "middlewares.push(sagaMiddleware);",
+      "",
+      "const composer = process.env.NODE_ENV === 'development'",
+      "  ? compose(",
+      "    applyMiddleware(...middlewares),",
+      "    console.tron.createEnhancer(),",
+      "  )",
+      "  : compose(applyMiddleware(...middlewares));",
+      "",
+      "const store = createStore(reducers, composer);",
+      "",
+      "sagaMiddleware.run(sagas);",
+      "",
+      "export default store;"
+    ],
+    "description": "Create Store index.js file"
+  },
+
+  "ducksIndex": {
+    "prefix": "ducks-index",
+    "body": [
+      "import { combineReducers } from 'redux';",
+      "",
+      "const reducers = combineReducers({",
+      "  // Remova essa linha depois de adicionar seus ducks",
+      "  example: () => [],",
+      "});",
+      "",
+      "export default reducers;",
+      ""
+    ],
+    "description": "Create Ducks index.js file"
+  },
+
+  "sagasIndex": {
+    "prefix": "sagas-index",
+    "body": [
+      "import { all } from 'redux-saga/effects';",
+      "",
+      "export default function* rootSaga() {",
+      "  yield all([]);",
+      "}",
+      ""
+    ],
+    "description": "Create Sagas index.js file"
   },
 
   "duck": {
     "prefix": "duck",
+    "body": [
+      "import Immutable from 'seamless-immutable';",
+      "",
+      "export const Types = {${1}};",
+      "",
+      "const INITIAL_STATE = Immutable({${2}});",
+      "",
+      "export default function ${3:${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}}(state = INITIAL_STATE, action) {",
+      "  switch (action.type) {",
+      "    ${4}",
+      "    default:",
+      "      return state;",
+      "  }",
+      "}",
+      "",
+      "export const Creators = {${5}};",
+      ""
+    ],
+    "description": "Create React Native Duck Module"
+  },
+
+  "reduxSauceDuck": {
+    "prefix": "rsduck",
     "body": [
       "import { createReducer, createActions } from 'reduxsauce';",
       "import Immutable from 'seamless-immutable';",
@@ -160,10 +248,10 @@
       "});",
       ""
     ],
-    "description": "Create react-native duck module"
+    "description": "Create ReactJS Duck Module with Reduxsauce"
   },
 
-  "reactotronconfig": {
+  "reactotronConfig": {
     "prefix": "reactotron-react",
     "body": [
       "import Reactotron from 'reactotron-react-js';",
@@ -171,6 +259,7 @@
       "if (__DEV__) {",
       "  const tron = Reactotron",
       "    .configure()",
+      "    .useReactNative()",
       "    .connect();",
       "",
       "  tron.clear();",
@@ -179,6 +268,28 @@
       "}",
       ""
     ],
-    "description": "Create React Reactotron Config"
+    "description": "Create ReactJS Reactotron Config"
+  },
+
+  "reactotronReduxConfig": {
+    "prefix": "reactotron-redux-react",
+    "body": [
+      "import Reactotron from 'reactotron-react-js';",
+      "import { reactotronRedux } from 'reactotron-redux';",
+      "import sagaPlugin from 'reactotron-redux-saga';",
+      "",
+      "if (__DEV__) {",
+      "  const tron = Reactotron.configure()",
+      "    .use(reactotronRedux())",
+      "    .use(sagaPlugin())",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.tron = tron;",
+      "}",
+      ""
+    ],
+    "description": "Create ReactJS Reactotron Config with Redux and Redux Saga"
   }
 }

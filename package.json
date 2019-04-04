@@ -1,17 +1,18 @@
 {
   "name": "RocketseatReactJS",
   "description": "ReactJS snippets created by Rocketseat.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "displayName": "Rocketseat ReactJS",
   "publisher": "rocketseat",
   "icon": "images/rocketseat.png",
   "galleryBanner": {
+    "color": "#7159c1",
     "theme": "dark"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rocketseat/vscode-rocketseat-reactjs"
+    "url": "https://github.com/Rocketseat/rocketseat-vscode-reactjs-snippets"
   },
   "engines": {
     "vscode": "0.10.x"
