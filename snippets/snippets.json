@@ -153,6 +153,8 @@
       "import { createStore, compose, applyMiddleware } from 'redux';",
       "import createSagaMiddleware from 'redux-saga';",
       "",
+      "// import '../config/ReactotronConfig.js'; // Faça a importação do ReactotronConfig de acordo com seu projeto",
+      "",
       "import reducers from './ducks';",
       "import sagas from './sagas';",
       "",
