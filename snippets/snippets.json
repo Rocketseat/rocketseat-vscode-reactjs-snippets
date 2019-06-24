@@ -308,5 +308,24 @@
       ""
     ],
     "description": "Create ReactJS Reactotron Config with Redux and Redux Saga"
+  },
+
+  "mongooseConnection": {
+    "prefix": "mongo-connect",
+    "body": [
+      "const mongoose = require('mongoose');",
+      "",
+      "mongoose.set('useNewUrlParser', true);",
+      "mongoose.set('useFindAndModify', false);",
+      "mongoose.set('useCreateIndex', true);",
+      "",
+      "mongoose.connect('mongodb://localhost/semana-omnistack', { useNewUrlParser: true });",
+      "",
+      "mongoose.Promise = global.Promise;",
+      "",
+      "module.exports = mongoose;",
+      ""
+    ],
+    "description": "Create Mongoose Connection"
   }
 }

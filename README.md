@@ -82,6 +82,7 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                 `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
 |       `reactotron-react →` | Cria arquivo de configuração do **Reactotron**                                |
 | `reactotron-redux-react →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
+|          `mongo-connect →` | Cria arquivo de configuração do **MongoDB** com **Mongoose**                  |
 
 <!-- CONTRIBUTING -->
 
