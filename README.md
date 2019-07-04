@@ -45,7 +45,7 @@ Este projeto visa a disponibilização de um conjunto de Snippets ou atalhos par
 
 ### Instalação
 
-Para instalar uma extensão você pode executar o **Command Pallete** através do comando `Ctrl + Shift + P` ou `Cmd + Shift + P` , digitar `Install Extensions` e por fim dar um `Enter`, feito isso pesquise por Rocketseat e você vai encontrar a extensão **Rocketseat React Native**.
+Para instalar uma extensão você pode executar o **Command Pallete** através do comando `Ctrl + Shift + P` ou `Cmd + Shift + P` , digitar `Install Extensions` e por fim dar um `Enter`, feito isso pesquise por Rocketseat e você vai encontrar a extensão **Rocketseat ReactJS**.
 
 ### Linguagens Suportadas
 
