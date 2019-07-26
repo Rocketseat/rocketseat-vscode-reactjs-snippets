@@ -66,7 +66,8 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 
 |                    Gatilho | Conteúdo                                                                      |
 | -------------------------: | ----------------------------------------------------------------------------- |
-|                     `rc →` | Cria um Componente **Stateful**                                               |
+|                     `rc →` | Cria um Componente **Stateful**   
+                     `rfhc →`| Cria um Componente **Stateful** hook  |
 |                    `rrc →` | Cria um Componente **Stateful** conectado ao **Redux**                        |
 |                    `rsc →` | Cria um Componente **Stateless**                                              |
 |                   `rrsc →` | Cria um Componente **Stateless** conectado ao **Redux**                       |
