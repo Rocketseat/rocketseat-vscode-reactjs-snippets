@@ -147,6 +147,34 @@
     "description": "Create Redux method mapDispatchToProps"
   },
 
+  "reduxConnect": {
+    "prefix": "redux-connect",
+    "body": [
+      "const mapStateToProps = ({ $1Reducer }) => ({",
+      "  $2: $1Reducer.$2",
+      "})",
+
+      "const mapDispatchToProps = dispatch =>",
+      "  bindActionCreators($1Actions, dispatch);",
+
+      "export default connect(",
+      "  mapStateToProps,",
+      "  mapDispatchToProps",
+      ")($3)",
+      ""
+    ]
+  },
+
+  "reduxImports": {
+    "prefix": "redux-imports",
+    "body": [
+      "import { connect } from 'react-redux'",
+      "import { bindActionCreators } from 'redux'",
+      "import $1 from '$2'",
+      ""
+    ]
+  },
+
   "createStore": {
     "prefix": "create-store-react",
     "body": [
@@ -305,5 +333,43 @@
       ""
     ],
     "description": "Create ReactJS Reactotron Config with Redux and Redux Saga"
+  },
+
+  "selectReduxSagaEffects": {
+    "prefix": "yselect",
+    "body": [
+      "const { $1 } = yield select(( $2 ) => $2$3);",
+      ""
+    ],
+    "description": "Easily add a select effect from Redux Sagas"
+  },
+
+  "putReduxSagaEffects": {
+    "prefix": "yput",
+    "body": [
+      "yield put($1Actions.$2());",
+      ""
+    ],
+    "description": "Easily add a put effect from Redux Sagas"
+  },
+
+  "callReduxSagaEffects": {
+    "prefix": "ycall",
+    "body": [
+      "yield call($1, $2)",
+      ""
+    ],
+    "description": "Easily add a call effect from Redux Sagas"
+  },
+
+  "allReduxSagaEffects": {
+    "prefix": "yall",
+    "body": [
+      "yield all([",
+      "  $1",
+      "]);",
+      ""
+    ],
+    "description": "Easily add an all effect from Redux Sagas"
   }
 }

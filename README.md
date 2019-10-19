@@ -75,6 +75,8 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                    `api →` | Cria um arquivo de configuração do Axios                                      |
 |        `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
 |     `mapdispatchtoprops →` | Cria o método `mapDispatchToProps` vazio                                      |
+|          `redux-connect →` | Cria todos métodos de conexão do redux em um componente                       |
+|          `redux-imports →` | Adiciona as importações do Redux                                              |
 |     `create-store-react →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
 |           `root-reducer →` | Cria o arquivo que combina os Reducers                                        |
 |              `root-saga →` | Cria o arquivo que centraliza os Sagas                                        |
@@ -82,6 +84,10 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                 `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
 |       `reactotron-react →` | Cria arquivo de configuração do **Reactotron**                                |
 | `reactotron-redux-react →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
+|                `yselect →` | Adiciona o `select effect` do **Redux Sagas** de maneira ágil                 |
+|                   `yput →` | Adiciona o `put effect` do **Redux Sagas** de maneira ágil                    |
+|                  `ycall →` | Adiciona o `call effect` do **Redux Sagas** de maneira ágil                   |
+|                   `yall →` | Adiciona o `all effect` do **Redux Sagas** de maneira ágil                    |
 
 <!-- CONTRIBUTING -->
 
