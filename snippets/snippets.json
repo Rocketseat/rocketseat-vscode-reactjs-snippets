@@ -305,5 +305,11 @@
       ""
     ],
     "description": "Create ReactJS Reactotron Config with Redux and Redux Saga"
+  },
+
+  "reactotronConsole": {
+    "prefix": "tron",
+    "body": ["console.tron.log('$1');", "$2"],
+    "description": "Useful and Fast way to add a console.tron.log and continue your proccess"
   }
 }
