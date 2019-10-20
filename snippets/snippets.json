@@ -305,5 +305,32 @@
       ""
     ],
     "description": "Create ReactJS Reactotron Config with Redux and Redux Saga"
+  },
+
+  "reactotronConsoleLog": {
+    "prefix": "ctl",
+    "body": [
+      "console.tron.log('$1');",
+      ""
+    ],
+    "description": "Useful and Fast way to add a console.tron.log and continue your proccess"
+  },
+
+  "reactotronConsoleWarn": {
+    "prefix": "ctw",
+    "body": [
+      "console.tron.warn('$1');",
+      ""
+    ],
+    "description": "Useful and Fast way to add a console.tron.warn and continue your proccess"
+  },
+
+  "reactotronConsoleError": {
+    "prefix": "cte",
+    "body": [
+      "console.tron.error('$1');",
+      ""
+    ],
+    "description": "Useful and Fast way to add a console.tron.error and continue your proccess"
   }
 }
