@@ -1,0 +1,20 @@
+name: Deploy Extension
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: "Release"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+      - name: "Publish"
+        uses: lannonbr/vsce-action@master
+        with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
