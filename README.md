@@ -1,66 +1,33 @@
-<!--
-*** Obrigado por estar vendo o nosso README. Se você tiver alguma sugestão
-*** que possa melhorá-lo ainda mais dê um fork no repositório e crie uma Pull
-*** Request ou abra uma Issue com a tag "sugestão".
-*** Obrigado novamente! Agora vamos rodar esse projeto incrível :D
--->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-reactjs-snippets/master/images/rocket.png" alt="Rocketseat"/>
+</div>
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/rocketseat.RocketseatReactJS.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
-[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
-![GitHub](https://img.shields.io/github/license/rocketseat/rocketseat-vscode-reactjs-snippets.svg)
+<h1 align="center">ReactJS Snippets</h1>
+<h3 align="center">Code Snippets for ReactJS</h3>
 
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <a href="https://rocketseat.com.br">
-    <img src="https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-reactjs-snippets/master/images/rocketseat_logo.png" alt="Logo">
-  </a>
-
-  <h3 align="center">ReactJS Snippets</h3>
+  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/rocketseat.RocketseatReactJS?color=%237159c1">
+  <img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/rocketseat.RocketseatReactJS?color=%237159c1">
+  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/r/rocketseat.RocketseatReactJS?color=%237159c1">
 </p>
 
-<!-- TABLE OF CONTENTS -->
+<p align="center">
+  <a href="#instala%C3%A7%C3%A3o">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#snippets">Snippets</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#linguagens-suportadas">Linguagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licen%C3%A7a">Licença</a>
+</p>
 
-## Tabela de Conteúdo
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-reactjs-snippets/master/images/component.gif" alt="Exemplo" />
+</p>
 
-- [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Começando](#come%C3%A7ando)
-  - [Instalação](#instala%C3%A7%C3%A3o)
-  - [Linguagens Suportadas](#linguagens-suportadas)
-  - [Como Usar?](#como-usar)
-  - [Snippets](#snippets)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
-- [Licença](#licen%C3%A7a)
-- [Contato](#contato)
-
-<!-- ABOUT THE PROJECT -->
-
-## Sobre o Projeto
-
-Este projeto visa a disponibilização de um conjunto de Snippets ou atalhos para criação de componentes e arquivos de configuração em aplicações ReactJS.
-
-## Começando
-
-### Instalação
+## Instalação
 
 Para instalar uma extensão você pode executar o **Command Pallete** através do comando `Ctrl + Shift + P` ou `Cmd + Shift + P` , digitar `Install Extensions` e por fim dar um `Enter`, feito isso pesquise por Rocketseat e você vai encontrar a extensão **Rocketseat ReactJS**.
 
-### Linguagens Suportadas
-
-- JavaScript (.js)
-- TypeScript (.ts)
-- JavaScript React (.jsx)
-- TypeScript React (.tsx)
-
-### Como Usar?
-
-Quando você instalar a Extensão o desenvolvimento em ReactJS será bem mais divertido.
-
-![Create ReactJS Component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-reactjs-snippets/master/images/component.gif)
-
-### Snippets
+## Snippets
 
 Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
 
@@ -82,13 +49,15 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                 `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
 |       `reactotron-react →` | Cria arquivo de configuração do **Reactotron**                                |
 | `reactotron-redux-react →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
-|                    `ctl →` | Adiciona um `console.tron.log`, para utilizadores do **Reactotron**           |
-|                    `ctw →` | Adiciona um `console.tron.warn`, para utilizadores do **Reactotron**          |
-|                    `cte →` | Adiciona um `console.tron.error`, para utilizadores do **Reactotron**         |
 
-<!-- CONTRIBUTING -->
+## Linguagens Suportadas
 
-## Contribuição
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
+
+## Como contribuir
 
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
@@ -99,14 +68,10 @@ Contribuições são o que fazem a comunidade open source um lugar incrível par
 5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
 6. Abra uma Pull Request
 
-<!-- LICENSE -->
-
 ## Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Esse projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-<!-- CONTACT -->
+---
 
-## Contato
-
-Rocketseat - [Github](https://github.com/rocketseat) - **oi@rocketseat.com.br**
+Feito com ♥ by Rocketseat 👋 [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
