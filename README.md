@@ -31,42 +31,31 @@ Para instalar uma extensão você pode executar o **Command Pallete** através d
 
 Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
 
-|                    Gatilho | Conteúdo                                                                      |
-| -------------------------: | ----------------------------------------------------------------------------- |
-|                     `rc →` | Cria um Componente **Stateful**                                               |
-|                    `rrc →` | Cria um Componente **Stateful** conectado ao **Redux**                        |
-|                    `rsc →` | Cria um Componente **Stateless**                                              |
-|                   `rrsc →` | Cria um Componente **Stateless** conectado ao **Redux**                       |
-|                    `rfc →` | Cria um Componente **Functional**                                             |
-|           `styled-react →` | Cria um arquivo de Estilização com **Styled Components**                      |
-|                    `api →` | Cria um arquivo de configuração do Axios                                      |
-|        `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
-|     `mapdispatchtoprops →` | Cria o método `mapDispatchToProps` vazio                                      |
-|     `create-store-react →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
-|           `root-reducer →` | Cria o arquivo que combina os Reducers                                        |
-|              `root-saga →` | Cria o arquivo que centraliza os Sagas                                        |
-|                   `duck →` | Cria um Duck                                                                  |
-|                 `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
-|       `reactotron-react →` | Cria arquivo de configuração do **Reactotron**                                |
-| `reactotron-redux-react →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
+|          Comando | Conteúdo                                                 |
+| ---------------: | -------------------------------------------------------- |
+|           `rc →` | Cria um componente **Stateful**                          |
+|          `rsc →` | Cria um componente **Stateless**                         |
+|          `rfc →` | Cria um componente **Functional**                        |
+| `styled-react →` | Cria um arquivo de estilização com **Styled Components** |
+|          `api →` | Cria um arquivo de configuração do Axios                 |
 
 ## Linguagens Suportadas
 
-- JavaScript (.js)
-- TypeScript (.ts)
-- JavaScript React (.jsx)
-- TypeScript React (.tsx)
+- JavaScript:
+  `.js/.jsx`
+
+- TypeScript:
+  `.ts/.tsx`
 
 ## Como contribuir
 
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/FeatureIncrivel`)
-3. Adicione suas mudanças (`git add .`)
-4. Comite suas mudanças (`git commit -m 'Adicionando uma Feature incrível!`)
-5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
-6. Abra uma Pull Request
+1. Faça um fork do projeto;
+2. Crie uma branch para sua feature (`git checkout -b feat/FeatureIncrivel`);
+3. Faça commit (`git commit -m 'feat: Adiciona novo snippet`);
+4. Faça push da branch (`git push origin feat/FeatureIncrivel`);
+5. Abra uma Pull Request.
 
 ## Licença
 
