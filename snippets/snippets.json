@@ -332,5 +332,21 @@
       ""
     ],
     "description": "Useful and Fast way to add a console.tron.error and continue your proccess"
+  },
+
+  "typecriptComponentFunctional": {
+    "prefix": "rfcts",
+    "body": [
+      "import React from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => (",      
+      "  <div />",      
+      ");",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
+    ],
+    "description": "Create ReactJS Typescript Functional Component"
   }
 }
