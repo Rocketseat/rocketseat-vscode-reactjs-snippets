@@ -29,7 +29,6 @@
 - [Começando](#come%C3%A7ando)
   - [Instalação](#instala%C3%A7%C3%A3o)
   - [Linguagens Suportadas](#linguagens-suportadas)
-  - [Como Usar?](#como-usar)
   - [Snippets](#snippets)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Licença](#licen%C3%A7a)
@@ -53,12 +52,6 @@ Para instalar uma extensão você pode executar o **Command Pallete** através d
 - TypeScript (.ts)
 - JavaScript React (.jsx)
 - TypeScript React (.tsx)
-
-### Como Usar?
-
-Quando você instalar a Extensão o desenvolvimento em ReactJS será bem mais divertido.
-
-![Create ReactJS Component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-reactjs-snippets/master/images/component.gif)
 
 ### Snippets
 
