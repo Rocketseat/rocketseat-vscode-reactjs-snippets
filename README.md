@@ -71,6 +71,7 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                    `rsc →` | Cria um Componente **Stateless**                                              |
 |                   `rrsc →` | Cria um Componente **Stateless** conectado ao **Redux**                       |
 |                    `rfc →` | Cria um Componente **Functional**                                             |
+|                    `rft →` | Cria um Componente **Functional** em typescript                               |
 |           `styled-react →` | Cria um arquivo de Estilização com **Styled Components**                      |
 |                    `api →` | Cria um arquivo de configuração do Axios                                      |
 |        `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
