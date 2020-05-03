@@ -1,6 +1,6 @@
 - gravar um GIF novo
 - mudar o nome do repositório
 - mudar os links que apontam pro nome antigo no github
-- deprecear a extensão de react native no vscode e github
+- depreciar a extensão de react native no vscode e github
 - revisar os snippets
 - revisar o nome da extensão (no caso tentar mudar ReactJS para React)
