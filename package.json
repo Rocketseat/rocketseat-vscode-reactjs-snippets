@@ -1,8 +1,8 @@
 {
   "name": "RocketseatReactJS",
-  "description": "ReactJS snippets created by Rocketseat.",
-  "version": "2.2.1",
-  "displayName": "Rocketseat ReactJS",
+  "description": "ReactJS and React Native snippets created by Rocketseat.",
+  "version": "1.0.0",
+  "displayName": "Rocketseat",
   "publisher": "rocketseat",
   "icon": "images/rocketseat.png",
   "galleryBanner": {

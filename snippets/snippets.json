@@ -1,38 +1,6 @@
 {
-  "component": {
-    "prefix": "rc",
-    "body": [
-      "import React, { Component } from 'react';",
-      "",
-      "// import { Container } from './styles';",
-      "",
-      "export default class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
-      "  render() {",
-      "    return <div />;",
-      "  }",
-      "}",
-      ""
-    ],
-    "description": "Create ReactJS Stateful Component"
-  },
-
-  "componentStateless": {
-    "prefix": "rsc",
-    "body": [
-      "import React from 'react';",
-      "",
-      "// import { Container } from './styles';",
-      "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <div />;",
-      "",
-      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
-      ""
-    ],
-    "description": "Create ReactJS Stateless Component"
-  },
-
-  "componentFunctional": {
-    "prefix": "rfc",
+  "functionalComponent": {
+    "prefix": "rf",
     "body": [
       "import React from 'react';",
       "",
@@ -45,10 +13,67 @@
       "}",
       ""
     ],
-    "description": "Create ReactJS Functional Component"
+    "description": "Create ReactJS functional component"
   },
 
-  "styles": {
+  "functionalComponentTS": {
+    "prefix": "rfts",
+    "body": [
+      "import React from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "interface Props {}",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC<Props> = () => (",
+      "  <div />",
+      ")",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
+      ""
+    ],
+    "description": "Create ReactJS TypeScript functional component"
+  },
+
+  "functionalComponentRN": {
+    "prefix": "rnf",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return (",
+      "    <View />",
+      "  );",
+      "}",
+      ""
+    ],
+    "description": "Create React Native Functional Component"
+  },
+
+  "functionalComponentTSRN": {
+    "prefix": "rnfts",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "interface Props {}",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC<Props> = () => (",
+      "  <View />",
+      ")",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
+      ""
+    ],
+    "description": "Create ReactJS TypeScript functional component"
+  },
+
+  "styles-react": {
     "prefix": "styled-react",
     "body": [
       "import styled from 'styled-components';",
@@ -61,18 +86,16 @@
     "description": "Create ReactJS Styled Components file"
   },
 
-  "api": {
-    "prefix": "api",
+  "styles-rn": {
+    "prefix": "styled-rn",
     "body": [
-      "import axios from 'axios';",
+      "import styled from 'styled-components/native';",
       "",
-      "const api = axios.create({",
-      "  baseURL: ${1},",
-      "});",
-      "",
-      "export default api;",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
       ""
     ],
-    "description": "Create Axios Configuration file"
+    "description": "Create React Native Styled Components file"
   }
 }
