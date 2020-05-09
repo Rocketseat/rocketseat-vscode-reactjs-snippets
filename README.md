@@ -59,26 +59,8 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 
 |                    Gatilho | Conteúdo                                                                      |
 | -------------------------: | ----------------------------------------------------------------------------- |
-|                     `rc →` | Cria um Componente **Stateful**                                               |
-|                    `rrc →` | Cria um Componente **Stateful** conectado ao **Redux**                        |
-|                    `rsc →` | Cria um Componente **Stateless**                                              |
-|                   `rrsc →` | Cria um Componente **Stateless** conectado ao **Redux**                       |
 |                    `rfc →` | Cria um Componente **Functional**                                             |
-|                    `rft →` | Cria um Componente **Functional** em typescript                               |
 |           `styled-react →` | Cria um arquivo de Estilização com **Styled Components**                      |
-|                    `api →` | Cria um arquivo de configuração do Axios                                      |
-|        `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
-|     `mapdispatchtoprops →` | Cria o método `mapDispatchToProps` vazio                                      |
-|     `create-store-react →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
-|           `root-reducer →` | Cria o arquivo que combina os Reducers                                        |
-|              `root-saga →` | Cria o arquivo que centraliza os Sagas                                        |
-|                   `duck →` | Cria um Duck                                                                  |
-|                 `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
-|       `reactotron-react →` | Cria arquivo de configuração do **Reactotron**                                |
-| `reactotron-redux-react →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
-|                    `ctl →` | Adiciona um `console.tron.log`, para utilizadores do **Reactotron**           |
-|                    `ctw →` | Adiciona um `console.tron.warn`, para utilizadores do **Reactotron**          |
-|                    `cte →` | Adiciona um `console.tron.error`, para utilizadores do **Reactotron**         |
 
 <!-- CONTRIBUTING -->
 
