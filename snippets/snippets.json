@@ -19,12 +19,12 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "function ${1:${TM_FILENAME/(.*)\\..+$/$1/}}() {",
       "  return <div />;",
       "}",
       "",
-      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
+      "export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};"
     ],
     "description": "Create ReactJS Functional Component Typescript"
-  }	
+  }
 }
