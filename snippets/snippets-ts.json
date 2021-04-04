@@ -15,16 +15,13 @@
   "componentFunctionalTypescript": {
     "prefix": "rfc",
     "body": [
-      "import React from 'react';",
-      "",
       "// import { Container } from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => {",
+      "export function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
       "  return <div />;",
       "}",
-      "",
-      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
+      ""
     ],
     "description": "Create ReactJS Functional Component Typescript"
-  }	
+  }
 }
