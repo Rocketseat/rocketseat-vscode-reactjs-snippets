@@ -28,7 +28,7 @@
     "description": "Create ReactJS Functional Component Typescript"
   },
 
-  "componentFunctionaDefaultlNextJSTypescript": {
+  "componentFunctionalDefaultlNextJSTypescript": {
     "prefix": "nfc",
     "body": [
       "export default function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}(){} "
