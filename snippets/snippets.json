@@ -19,12 +19,20 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => {",
       "  return <div />;",
       "}",
       "",
       "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
     ],
     "description": "Create ReactJS Functional Component Typescript"
+  },
+
+  "componentFunctionaDefaultlNextJSTypescript": {
+    "prefix": "nfc",
+    "body": [
+      "export default function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}(){} "
+    ],
+    "description": "Create NextJS Default Functional Component Typescript"
   }	
 }
