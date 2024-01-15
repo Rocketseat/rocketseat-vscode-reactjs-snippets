@@ -26,5 +26,13 @@
       "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
     ],
     "description": "Create ReactJS Functional Component Typescript"
+  },
+
+  "componentFunctionaDefaultlNextJSTypescript": {
+    "prefix": "nfc",
+    "body": [
+      "export default function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}(){} "
+    ],
+    "description": "Create NextJS Default Functional Component Typescript"
   }	
 }
